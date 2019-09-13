@@ -1,0 +1,129 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: montserrat;
+    color: aliceblue;
+}
+
+.app {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#bg-circle {
+    clip-path: circle(88% at 21% 3%);
+    background: #f0f0f0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.page-container {
+    background: #c61951;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-container,
+.page-container>* {
+    z-index: 2;
+}
+
+.login-container {
+    background: #f0f0f0;
+    height: 80%;
+    width: 50%;
+    box-shadow: 0 0 70px #1b083d;
+    ;
+}
+
+.login-header {
+    widows: 100%;
+    background: #c61951;
+    display: block;
+    padding-top: 12px;
+}
+
+.login-txt {
+    font-size: 33pt;
+    background: #1b083d;
+    margin-left: -37px;
+    padding: 12px;
+    width: 70%;
+    text-align: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+.darkside {
+    width: 37px;
+    height: 37px;
+    margin-left: -37px;
+    background: #1b083d;
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.login-body {
+    padding: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-body>input {
+    margin: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 9px;
+    background: transparent;
+    border: solid #1b083d;
+    font-family: inherit;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: #673ab7;
+    box-shadow: 1px 0 2px #c61951;
+}
+
+input[type-button] {
+    background-attachment: fixed;
+    color: #cecece;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px #1b1b1b;
+}
+
+forg-pwd {
+    columns: #1b083d;
+    align-self: center;
+    font-size: 9pt;
+    padding: 11px;
+    cursor: pointer;
+    color: #1b083d;
+}
+
+.button {
+    background: #1b083d;
+    border: none;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+}
